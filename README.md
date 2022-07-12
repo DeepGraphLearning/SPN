@@ -65,7 +65,7 @@ python refine.py --dataset ppi-2-99 \
 
 Here we train a CRF-GAT model with the potential functions (theta-functions) parameterized directly with GNNs (rather than with Eq. 9 in the paper). We optimize the model with the maximin game of the CRF (Eq. 3). The training process is equivalent to refine a no-log-softmax SPN-GAT without the proxy problem.
 ```bash
-python fine_tune.py --dataset pubmed \
+python refine.py --dataset pubmed \
     --no-proxy \
     --refine-epochs 5000 \
     --refine-eval-every 50 \
